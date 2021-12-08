@@ -26,5 +26,9 @@ public class WizardNumber : MonoBehaviour
         {
             Debug.Log("Seta Para cima foi apertada!");
         }
+        if(Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            Debug.Log("Seta Para baixo foi apertada!");
+        }
     }
 }
