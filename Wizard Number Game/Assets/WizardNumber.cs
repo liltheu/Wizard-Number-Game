@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class WizardNumber : MonoBehaviour
 {
+    [SerializeField]
+    TextMesh enunciado;
+    [SerializeField]
+    TextMesh instrucao;
     int max;
     int min;
     int numeroAdvinhado;
@@ -19,16 +23,31 @@ public class WizardNumber : MonoBehaviour
         max = 1000;
         min = 1;
         numeroAdvinhado = 500;
-
-        Debug.Log("Bem vindo ao Advinhador de Numeros !");
-        Debug.Log("Pense em um numero, e não me fale qual é !");
-        Debug.Log("O maior numero que você pode pensar é :" + max);
-        Debug.Log("O menor numero que você pode pensar é :" + min);
+        enunciado.text = "Bem vindo ao Advinhador de Numeros !";
+        Delay();
+        enunciado.text = "Pense em um numero, e não me fale qual é !";
+        Delay();
+        enunciado.text = "O maior numero que você pode pensar é :" + max;
+        Delay();
+        enunciado.text = "O menor numero que você pode pensar é :" + min;
         Debug.Log("Me diz se o numero que você pensou é maior ou menor que : " + numeroAdvinhado);
         Debug.Log("Aperte para cima se = Maior, Aperte para baixo se = Menor, e Enter se = Correto!");
         max = max + 1;
     }
 
+    private bool Delay()
+    {
+        // bool v = false;
+        // while (v == false)
+        // {
+        //     instrucao.text = "Aperte Enter para continuar!";
+        //     if(Input.GetKeyDown(KeyCode.Return))
+        //         v = true;
+        // }
+        // instrucao.text = "";
+        // return v;
+        return true;
+    }
 
     // Update is called once per frame
     void Update()
