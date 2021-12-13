@@ -6,8 +6,6 @@ public class WizardNumber : MonoBehaviour
 {
     [SerializeField]
     TextMesh enunciado;
-    [SerializeField]
-    TextMesh instrucao;
     int max;
     int min;
     int numeroAdvinhado;
@@ -15,7 +13,7 @@ public class WizardNumber : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("StartGame", 2.0f, 0.3f);
+        StartGame();
     }
 
     void StartGame()
