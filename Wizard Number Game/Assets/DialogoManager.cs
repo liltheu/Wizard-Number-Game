@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DialogoManager : MonoBehaviour
 {
+    [SerializeField]
+    TextMesh enunciado;
 
     private Queue<string> frases;
     void Start()
@@ -13,6 +15,6 @@ public class DialogoManager : MonoBehaviour
 
     public void StartDialogo (Dialogo dialogo)
     {
-        Debug.Log("Starting conversation With" + dialogo.nome);
+        enunciado.text = "Starting conversation With" + dialogo.nome;
     }
 }

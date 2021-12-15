@@ -444,7 +444,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogo:
     nome: Roberto
-    frases: []
+    frases:
+    - Bem vindo ao Advinhador de Numeros !
+    - "Pense em um numero, e n\xE3o me fale qual \xE9 !"
+    - 
+    - 
+    - 
 --- !u!114 &862505439
 MonoBehaviour:
   m_ObjectHideFlags: 0
