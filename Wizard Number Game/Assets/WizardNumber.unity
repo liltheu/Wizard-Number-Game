@@ -230,6 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f1bcdf81f0e7044b3785ddc97e6e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enunciado: {fileID: 1132935564}
 --- !u!1 &370464304
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,6 +409,7 @@ GameObject:
   - component: {fileID: 862505437}
   - component: {fileID: 862505439}
   - component: {fileID: 862505438}
+  - component: {fileID: 862505440}
   m_Layer: 0
   m_Name: BotaoIniciar
   m_TagString: Untagged
@@ -447,9 +449,9 @@ MonoBehaviour:
     frases:
     - Bem vindo ao Advinhador de Numeros !
     - "Pense em um numero, e n\xE3o me fale qual \xE9 !"
-    - 
-    - 
-    - 
+    - "Pense em um numero, e n\xE3o me fale qual \xE9 !"
+    - "Pense em um numero, e n\xE3o me fale qual \xE9 !"
+    - "Pense em um numero, e n\xE3o me fale qual \xE9 !"
 --- !u!114 &862505439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -488,7 +490,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
@@ -504,6 +506,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!58 &862505440
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862505436}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 4.93, y: 2.08}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &1132935562
 GameObject:
   m_ObjectHideFlags: 0
