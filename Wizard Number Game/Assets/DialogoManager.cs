@@ -15,6 +15,6 @@ public class DialogoManager : MonoBehaviour
 
     public void StartDialogo (Dialogo dialogo)
     {
-        Debug.Log("Conversando com " + dialogo.nome);
+        enunciado.text = dialogo.nome;
     }
 }
