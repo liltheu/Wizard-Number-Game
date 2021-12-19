@@ -13,8 +13,12 @@ public class DialogoManager : MonoBehaviour
         frases = new Queue<string>();
     }
 
-    public void StartDialogo (Dialogo dialogo)
+    public IEnumerator StartDialogo(Dialogo dialogo)
     {
-        enunciado.text = dialogo.nome;
+        for (int i = 0; i < frases.Count; i++)
+        {
+            yield return new WaitForSeconds(5);
+            Debug.Log(dialogo.frases[i]);
+        }
     }
 }
