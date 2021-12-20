@@ -5,6 +5,8 @@ using UnityEngine;
 [System.Serializable]
 public class Dialogo
 {
-    public string nome;
-    public string[] frases;
+    public string Name;
+    public string[] type;
+    public string[] Phrase;
+
 }
